@@ -57,20 +57,4 @@
 // console.log("Hi",p.firstname,p.lastname);//Hi Hjk Doe
 // let v = new Person("hello","hdus");
 // console.log("Hi",p.firstname,p.lastname);//Hi Hjk Doe
-
-
-
-//Methods:function on a class are called methods ,we don't use function keyword
-// class Person{
-//     constructor(firstname,lastname){
-//         this.firstname=firstname;
-//         this.lastname=lastname;
-//     }
-//     greet(){
-//         console.log("Hi there! I'm", this.firstname);
-//     }
-// }
-
-// let p = new Person("Malika","van Putten");
-// p.greet();
-// Hi there! I'm Malika
+//the default argument is always the tailing aurgument so that no position conflict is to be solved
