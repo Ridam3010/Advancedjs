@@ -67,11 +67,11 @@
 
 //Javascript Destructuring
 
-const person={
-    firstName:"John",
-    lastNmae:"Doe",
-    age:50
-};
+// const person={
+//     firstName:"John",
+//     lastNmae:"Doe",
+//     age:50
+// };
 
 // let{firstName,lastName}=person;
 // console.log(firstName);
@@ -84,5 +84,77 @@ const person={
 // let{firstName,lastName,country="US"}=person;
 
 //Alias
-let{firstName:name}=person;
-console.log(name);//John
+// let{firstName:name}=person;
+// console.log(name);//John
+// console.log(firstname);//Not defined
+
+// let name="GurukulTheSchooles";
+
+// let[a1,a2,a3,a4,a5]=name;
+// console.log(a1,a2,a3,a4,a5);//G u r u k
+
+
+//Array Destructuring
+// const fruits=["Bananas","Oranges","Apples","Mangos"];
+// // let[fruit1,fruit2]=fruits;
+// let[fruit1,,,fruit2]=fruits;
+// console.log(fruit1,fruit2);//Bananas Mangos
+
+// const fruits=["Bananas","Oranges","Apples","Mangos"];
+// let{[3]:fruit1,[1]:fruit2}=fruits;//Mangos Oranges
+// console.log(fruit1,fruit2);
+
+//The Rest Property
+//the remaining aurgument can be held by last aurgument
+
+// const numbers=[10,20,30,40,50,60,70];
+
+// const[a,b,...rest]=numbers;
+// console.log(a,b,rest);//10 20 [ 30, 40, 50, 60, 70 ]
+
+//Destructing maps
+// const fruits=new Map([
+//     ["apples",500],
+//     ["bananas",300],
+//     ["orange",200]
+// ]);
+// let text="";
+// for(const[key,value]of fruits){
+//     text+=key+"is"+value;
+// }
+
+// let firstname="John";
+// let lastname="Doe";
+
+// [firstname,lastname]=[lastname,firstname];
+
+
+//Javascript exponential
+// let x=5;
+// let z=x**2;
+
+// let x=5;
+// let z=Math.pow(x,2);
+
+// let x=5;
+// x**=2;
+
+//Array includes():case sensitive
+// const fruits=["Banana","Orange","Apple","Mango"];
+// console.log(fruits.includes("Mango"));//true
+
+// console.log(fruits.includes("Banana",3));
+
+//trailing comma
+// const arr=["one",
+//     "two",
+//     "three",,
+// ];
+// console.log(arr.length);
+
+// const person={
+//     firstname:"john",
+//     lastName:"doe",
+//     age:30
+// }
+
