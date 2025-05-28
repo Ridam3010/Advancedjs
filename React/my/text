@@ -1,0 +1,58 @@
+<!-- 
+React is js library created by facebook
+it is a single pag applications
+user application is much better
+it is a library not a framework
+
+LIbrary is a programming can be explained as a collection of code and it is import and used project is not depenedent on a library
+
+framework:- not have muvh flexibility project is depenedent on frmaework -->
+
+
+
+<!-- react create a virtual DOM
+windows->document->Html --> 
+
+<!-- 
+Benefits:-
+react first creates exact copy of your dom
+then  only reflect that part which you updated
+faster response.cause no page loading time as it is single page application -->
+
+<!-- JSX:- 98% of html
+
+javascript XML
+we  write HTMl tags inside javascript -->
+
+<!-- const elemenet = <h>HELLO</h>
+
+jsx will be translated into normal javascript by Babel -->
+
+<!-- some rules
+
+
+. we can,t return one html element at once but we can wrap the elements inside a parent html tag do value return krna  hai to use ek tga ke andr wrap krna hoga 
+. we can use JSx inside for loops,if else cases
+. html attribute names like "class" becomes "className" -->
+<!-- .in jsx html tags must always be closed -->
+
+
+<!-- React component 
+a component is an independent ,reusable code block which divieds the UI into smaller pieces -->
+<!-- has two type component :-functional(stateless:doesn't maintain state) and class component(stateful) -->
+<!-- funcitonal component:- PROPS MEANS PROPERTIES
+function Welcome(props){
+    return <h1>Hello,{props.name}</h1>;
+} -->
+
+class Hello extends React.Component{
+    render(){
+        return React.createdElement('div',null,'Hello${this.props.toWhat}')
+    }
+}
+<!-- named export(export with exact name) and default export(pura function export with any name) -->
+
+props
+<--React is a component based library which divides the UI into little reusable peices.In some cases,those components need to communicate (send data to each other) and the way to pass data between component is by using props.
+Props is a special keyword in React,which stands for properties and is being used for passing data from one component to another.
+But the important part here is that data with prps are being passed in a uni directional flow.
